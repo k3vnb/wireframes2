@@ -1,0 +1,74 @@
+* {
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+}
+*:not(body):not(html):not(.world):not(.layer) {
+  border:1px dashed #000;
+}
+.hero, .villian, .henchmen {
+  background-color: black;
+}
+@media screen and (min-width: 1001px) {
+  .world {
+    width: 100%;
+    padding: 65px;
+  }
+  .hero {
+    float: left;
+    width: 600px;
+    height: 540px;
+  }
+
+  .layer {
+    float: left;
+    width: 200px;
+    margin-left: 30px;
+  }
+  .villian, .henchmen {
+    width: 298px;
+    height: 260px;
+  }
+  .henchmen {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .world {
+    min-width: 732px;
+    padding: 65px;
+    text-align: center;
+  }
+  .hero {
+    display: inline-block;
+    width: 600px;
+    height: 540px;
+  }
+  .villian, .henchmen {
+    display: inline-block;
+    margin-top: 20px;
+    width: 298px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .world {
+    text-align: center;
+    min-width: 400px;
+    display: table;
+    padding: 65px;
+  }
+  .hero, .layer {
+    display: inline-block;
+  }
+
+  .hero {
+    width: 300px;
+    height: 310px;
+  }
+  .layer div {
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+  }
+}
