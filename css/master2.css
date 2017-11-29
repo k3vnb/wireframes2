@@ -4,7 +4,7 @@
   margin: 0;
 }
 *:not(body):not(html):not(.world):not(.ships) {
-  border:1px dashed #000;
+  background-color: black;
 }
 .world {
   width: 100%;
