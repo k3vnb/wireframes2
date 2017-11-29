@@ -1,0 +1,80 @@
+* {
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+}
+*:not(body):not(html):not(.world):not(.ships) {
+  border:1px dashed #000;
+}
+.world {
+  width: 100%;
+  padding: 65px;
+}
+@media screen and (min-width: 1001px) {
+  .world {
+    text-align: center;
+  }
+  .ship-port {
+    display: inline-block;
+    width: 1000px;
+    height: 40px;
+  }
+  .ships {
+    display: inline-block;
+    width: 1000px;
+    text-align: center;
+  }
+  .ship {
+    height: 150px;
+    width: 250px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+  .world {
+    text-align: center;
+  }
+  .ship-port {
+    display: inline-block;
+    width: 600px;
+    height: 40px;
+  }
+  .ships {
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+  }
+  .ship {
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .world {
+    text-align: center;
+  }
+  .ship-port {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+  }
+  .ships {
+    width: 300px;
+    height: 40px;
+  }
+  .ship {
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .ship:nth-child(2n+0) {
+    display: none;
+  }
+}
